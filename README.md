@@ -46,8 +46,15 @@ In order to test the validy of my code, I have done the following:
 * Attempted to crash my game by typing incorrect inputs and have ensured no errors occured
 * Have run the game through both the Github terminal and the Heroku App and ensured no bugs occurred
 
+## Bugs
+Corrected Bugs
+*
 
+Remaining Bugs
+* No bugs remaining
 
+Validator Testing
+* No errors occured when running the code through the PEP8 Online programme
 
 ## Deployment
 This project was deployed using Code Institue's mock terminal for Heroku
