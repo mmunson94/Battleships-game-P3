@@ -49,3 +49,12 @@ def plot_ships(board):
         while board[ship_row][ship_column] == "X":
             ship_row, ship_column = plot_coordinates()
         board[ship_row][ship_column] = "X"
+
+# Function to determine whether a ship has been hit
+def check_hits(board):
+    count = 0
+    for row in board:
+        for column in row:
+            if column == "X":
+                count += 1
+    return count
