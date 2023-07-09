@@ -33,11 +33,23 @@ A menu has been implemented for good UX which allows the user to select difficul
 
 The Board is consistenly updated with users coordinates
 
+<img width="448" alt="Screenshot 2023-07-09 at 23 59 14" src="https://github.com/mmunson94/Portfolio-Project-1/assets/114744383/a70032bd-599d-48df-85c7-ce252820893c">
+
+#
+
 Input validation has been put in place to ensure user input is correct therefore, the user cannot
 enter inputs outside the games parameters and the users is notified if they have entered the same 
 coordinates more than once
 
+<img width="537" alt="Screenshot 2023-07-10 at 00 00 07" src="https://github.com/mmunson94/Portfolio-Project-1/assets/114744383/bf99ac45-e949-4e71-b086-25d215271bdd">
+
+#
+
 A restart feature has also been set up, so users can choose to play again if they choose
+
+<img width="361" alt="Screenshot 2023-07-10 at 00 02 44" src="https://github.com/mmunson94/Battleships-game-P3/assets/114744383/873bf286-b9e7-4f21-bc55-f7688a8aa06d">
+
+#
 
    ### Future Features
 * Different sized ships
