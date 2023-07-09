@@ -85,3 +85,22 @@ def start_game():
             break
         print("You have " + str(turns) + " turns left")
         print_board(user_board)
+        if turns == 0:
+            print("You ran out of turns")
+            replay_game = input("Do you wish to play again? y/n: ")
+            if replay_game.upper() == "Y":
+              restart_game()
+
+# Function that allows the user to restart game
+def restart_game():
+    print("restart game")
+    global turns
+    turns = 30
+    print(turns) 
+    global user_board
+    global computer_board
+    user_board = [[" "] * 9 for i in range(9)]
+    computer_board = [[" "] * 10 for x in range(9)]
+    print(user_board)
+    print(computer_board)
+    start_game()
