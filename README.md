@@ -45,3 +45,7 @@ A restart feature has also been set up, so users can choose to play again if the
 ## Deployment
 
 ## Credits
+* https://scaler.com/topics/how-to-clear-screen-in-python for the clear screen function
+* https://stackoverflow.com/questions/4288973/whats-the-difference-between-s-and-d-in-string-formatting for the formatting of rows and columns in the board
+* https://www.youtube.com/watch?v=rfscVS0vtbw&ab_channel=freeCodeCamp.org
+* Code Institute love sandwiches project
