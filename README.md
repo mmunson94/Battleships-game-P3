@@ -48,7 +48,8 @@ In order to test the validy of my code, I have done the following:
 
 ## Bugs
 Corrected Bugs
-*
+* I had a bug where the name and turns werent showing, in order to fix this I made them both a global variable
+* I had a bug where the screen wouldnt refresh when restarting the game, I fixed this by implementing the Start_game() function 
 
 Remaining Bugs
 * No bugs remaining
