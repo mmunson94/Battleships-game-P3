@@ -122,3 +122,21 @@ def show_menu():
     elif choice.upper() == "C":
         name = input("Enter Name: ")
         show_menu()
+
+
+# Function that allows user to choose difficulty setting
+def configure_difficulty():
+    print("What difficulty do you wish to choose?")
+    print("a. easy (turns = 30)  b. intermediate (turns = 20) c . hard (turns = 15)")
+    difficulty = input("a/b/c: ")
+    while difficulty not in "abcABC":
+        print('Not an appropriate choice, please select a valid choice')
+        difficulty = input("a/b/c: ")
+    global turns
+    if difficulty.upper() == "A":
+        turns = 30
+    elif difficulty.upper() == "B":
+        turns = 20
+    elif difficulty.upper() == "C":
+        turns = 15
+    start_game()
