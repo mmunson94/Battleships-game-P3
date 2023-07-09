@@ -1,3 +1,4 @@
+import os
 from random import randint
 
 # Computer board for generated ship locations that is hidden from user
@@ -5,6 +6,15 @@ computer_board = [[" "] * 9 for x in range(9)]
 # User Board that displays hits and misses
 user_board = [[" "] * 9 for i in range(9)]
 turns = 30
+name = Captain
+
+# wipes the screen displayed to the user to give a better user experience
+# https://scaler.com/topics/how-to-clear-screen-in-python
+def clear_screen():
+    if os.name == 'nt': # for windows
+        os.system('cls')
+    else:
+        os.system('clear') # for unix/linux/mac os
 
 # Function to print the board for user UX
 def print_board(board):
@@ -89,7 +99,7 @@ def start_game():
             print("You ran out of turns")
             replay_game = input("Do you wish to play again? y/n: ")
             if replay_game.upper() == "Y":
-            restart_game()
+                restart_game()
 
 # Function that allows the user to restart game
 def restart_game():
@@ -140,3 +150,7 @@ def configure_difficulty():
     elif difficulty.upper() == "C":
         turns = 15
     start_game()
+
+if __name__ == "__main__":
+    clear_screen()
+    show_menu()
