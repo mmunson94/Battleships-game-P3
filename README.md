@@ -28,7 +28,7 @@ A menu has been implemented for good UX which allows the user to select difficul
 
 <img width="740" alt="Screenshot 2023-07-09 at 23 54 02 1" src="https://github.com/mmunson94/Battleships-game-P3/assets/114744383/f663c2ef-8230-4ac7-a193-834f1d63cb60">
 
-
+#
 
 The Board is consistenly updated with users coordinates
 
