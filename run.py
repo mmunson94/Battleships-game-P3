@@ -89,7 +89,7 @@ def start_game():
             print("You ran out of turns")
             replay_game = input("Do you wish to play again? y/n: ")
             if replay_game.upper() == "Y":
-              restart_game()
+            restart_game()
 
 # Function that allows the user to restart game
 def restart_game():
@@ -104,3 +104,21 @@ def restart_game():
     print(user_board)
     print(computer_board)
     start_game()
+
+
+# Function that generates menu for user interface to allow for better UX
+def show_menu():
+    global name
+    clear_screen()
+    print("--- BATTLESHIPS ---")
+    print(" ")
+    print("   Hello! " + name)
+    choice = input("a. play game     b. configure difficulty     c. Set name \n")
+    
+    if choice.upper() == "A":
+        start_game()
+    elif choice.upper() == "B":
+        configure_difficulty()
+    elif choice.upper() == "C":
+        name = input("Enter Name: ")
+        show_menu()
