@@ -17,7 +17,7 @@ and alternatively, hits are marked by 'X'.
 
 
 ## Features
-   ### Current features
+   ### Current Features
    * Random Generated Computer Board
 Ships are randomly generated on a hidden board in which the user must try to locate
 
@@ -31,7 +31,12 @@ enter inputs outside the games parameters and the users is notified if they have
 coordinates more than once
 
 A restart feature has also been set up, so users can choose to play again if they choose
-   
+
+   ### Future Features
+* Different sized ships
+* User can chose to use one nuke a round that can hit multiple coordinates in one turn
+* User can choose to play against another user
+
 
 ## Data Model
 
