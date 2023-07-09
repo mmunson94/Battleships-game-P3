@@ -14,37 +14,37 @@ Here is the link to the live project: https://battleships-p3-mmunson-bdc48832612
 Battleships is based on the classic game of the same name.
 In this iteration the user shall attempt to sink 5 of the computers 
 ships with the amount of turns dependent on what difficulty the 
-user decides to play on. Users misses are marked by '-' on the board 
+user decides to play on. User misses are marked by '-' on the board 
 and alternatively, hits are marked by 'X'.
 
 
 ## Features
    ### Current Features
    * Random Generated Computer Board
-Ships are randomly generated on a hidden board in which the user must try to locate
+Ships are randomly generated on a hidden board in which the user must try to locate.
 
    * Menu
-A menu has been implemented for good UX which allows the user to select difficulty and use their name
+A menu has been implemented for good UX which allows the user to select what difficulty they want and ability to change their name.
 
 <img width="740" alt="Screenshot 2023-07-09 at 23 54 02 1" src="https://github.com/mmunson94/Battleships-game-P3/assets/114744383/f663c2ef-8230-4ac7-a193-834f1d63cb60">
 
 #
 
-The Board is consistenly updated with users coordinates
+The Board is consistenly updated with user coordinates.
 
 <img width="448" alt="Screenshot 2023-07-09 at 23 59 14" src="https://github.com/mmunson94/Portfolio-Project-1/assets/114744383/a70032bd-599d-48df-85c7-ce252820893c">
 
 #
 
-Input validation has been put in place to ensure user input is correct therefore, the user cannot
-enter inputs outside the games parameters and the users is notified if they have entered the same 
-coordinates more than once
+Input validation has been put in place to ensure user input is correct, therefore, the user cannot
+enter inputs outside the games parameters and the user is notified if they have entered the same 
+coordinates more than once.
 
 <img width="537" alt="Screenshot 2023-07-10 at 00 00 07" src="https://github.com/mmunson94/Portfolio-Project-1/assets/114744383/bf99ac45-e949-4e71-b086-25d215271bdd">
 
 #
 
-A restart feature has also been set up, so users can choose to play again if they choose
+A restart feature has also been set up, so the user can choose to play again if they choose.
 
 <img width="361" alt="Screenshot 2023-07-10 at 00 02 44" src="https://github.com/mmunson94/Battleships-game-P3/assets/114744383/873bf286-b9e7-4f21-bc55-f7688a8aa06d">
 
@@ -57,9 +57,9 @@ A restart feature has also been set up, so users can choose to play again if the
 
 
 ## Data Model
-The model I chose to use for my game was a Board class. the game creates two boards, one for the computer which is hiden from the user that has the randomly genered coordinates that the user must guess and the other for the user to see the coordinates they have plotted.
+The model I chose to use for my game was a Board class. the game creates two boards, one for the computer which is hiden from the user. This Board has  randomly genered coordinates that the user must guess. The other Board is for the user to see the coordinates they have plotted.
 
-The Board class will store all the relevant data which includes BOard size, ship coordinates, the number of ships, the users guesses and the number of turns the user has.
+The Board class will store all the relevant data which includes Board size, ship coordinates, the number of ships, the users guesses and the number of turns the user has.
 
 In order to play the game, the class uses methods such 'print' which shows the user the current Board, the methods 'plot_coordinates' to determine what the user has guessed and the result and the method 'plot_ships' to randomly generate the ships on the hidden AI Board.
 
@@ -72,7 +72,7 @@ In order to test the validy of my code, I have done the following:
 ## Bugs
 Corrected Bugs
 * I had a bug where the name and turns werent showing, in order to fix this I made them both a global variable
-* I had a bug where the screen wouldnt refresh when restarting the game, I fixed this by implementing the Start_game() function 
+* I had a bug where the screen wouldn't refresh when restarting the game. I fixed this by implementing the Start_game() function 
 
 Remaining Bugs
 * No bugs remaining
