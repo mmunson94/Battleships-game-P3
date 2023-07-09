@@ -60,11 +60,11 @@ def plot_ships(board):
 
 # Function to take user input of coordinates for missile strikes
 def plot_coordinates():
-    row = input("Enter the row of the ship: ").upper()
+    row = input("Enter the row of the ship: \n").upper()
     while row not in "123456789":
         print('Not an appropriate choice, please select a valid row')
-        row = input("Enter the row of the ship: ").upper()
-    column = input("Enter the column of the ship: ").upper()
+        row = input("Enter the row of the ship: \n").upper()
+    column = input("Enter the column of the ship: \n").upper()
     while column not in "ABCDEFGHJ":
         print('Not an appropriate choice, please select a valid column')
         column = input("Enter the column of the ship: ").upper()
@@ -132,14 +132,14 @@ def show_menu():
     print("--- BATTLESHIPS ---")
     print(" ")
     print("   Hello! " + name)
-    choice = input("a. play game     b. configure difficulty     c. Set name \n")
+    choice = input("a. play game   b. configure difficulty   c. Set name \n")
     
     if choice.upper() == "A":
         start_game()
     elif choice.upper() == "B":
         configure_difficulty()
     elif choice.upper() == "C":
-        name = input("Enter Name: ")
+        name = input("Enter Name: \n")
         show_menu()
 
 
@@ -150,7 +150,7 @@ def configure_difficulty():
     difficulty = input("a/b/c: ")
     while difficulty not in "abcABC":
         print('Not an appropriate choice, please select a valid choice')
-        difficulty = input("a/b/c: ")
+        difficulty = input("a/b/c: \n")
     global turns
     if difficulty.upper() == "A":
         turns = 30
