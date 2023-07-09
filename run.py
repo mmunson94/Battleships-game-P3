@@ -8,8 +8,15 @@ user_board = [[" "] * 9 for i in range(9)]
 turns = 30
 name = Captain
 
+# Function to randomly generate messages of support to the user
+def get_motivational_messages():
+    messages = [
+        'keep trying Captain', 'almost got her! keep firing', 'all hands on deck', 'we need to sink these ships Captain!'
+    ]
+    return messages[randint(0, len(messages)-1)]
+
+
 # wipes the screen displayed to the user to give a better user experience
-# https://scaler.com/topics/how-to-clear-screen-in-python
 def clear_screen():
     if os.name == 'nt': # for windows
         os.system('cls')
