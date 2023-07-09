@@ -6,6 +6,8 @@ Each ship occupies one place on the board
 
 Here is the link to the live project: https://battleships-p3-mmunson-bdc488326124.herokuapp.com/
 
+<img width="1440" alt="Screenshot 2023-07-09 at 22 23 48" src="https://github.com/mmunson94/Battleships-game-P3/assets/114744383/879015a2-f114-42f8-996f-a3bdf0536bb8">
+
 
 ## How the game works
 
