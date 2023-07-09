@@ -39,6 +39,11 @@ A restart feature has also been set up, so users can choose to play again if the
 
 
 ## Data Model
+The model I chose to use for my game was a Board class. the game creates two boards, one for the computer which is hiden from the user that has the randomly genered coordinates that the user must guess and the other for the user to see the coordinates they have plotted.
+
+The Board class will store all the relevant data which includes BOard size, ship coordinates, the number of ships, the users guesses and the number of turns the user has.
+
+In order to play the game, the class uses methods such 'print' which shows the user the current Board, the methods 'plot_coordinates' to determine what the user has guessed and the result and the method 'plot_ships' to randomly generate the ships on the hidden AI Board.
 
 ## Testing
 In order to test the validy of my code, I have done the following:
