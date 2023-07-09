@@ -43,6 +43,13 @@ A restart feature has also been set up, so users can choose to play again if the
 ## Testing
 
 ## Deployment
+This project was deployed using Code Institue's mock terminal for Heroku
+
+Steps for deployment:
+* Create a new Heroku app
+* Set buildbacks to 'python' and 'NodeJS' and then create Config Var called PORT. Set this to 8000.
+* Link your github repository to Heroku app
+* Clck Deploy
 
 ## Credits
 * https://scaler.com/topics/how-to-clear-screen-in-python for the clear screen function
