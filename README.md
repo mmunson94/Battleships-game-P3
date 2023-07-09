@@ -17,6 +17,21 @@ and alternatively, hits are marked by 'X'.
 
 
 ## Features
+   ### Current features
+   * Random Generated Computer Board
+Ships are randomly generated on a hidden board in which the user must try to locate
+
+   * Menu
+A menu has been implemented for good UX which allows the user to select difficulty and use their name
+
+Board is consistenly updated with users coordinates
+
+Input validation has been put in place to ensure user input is correct therefore, the user cannot
+enter inputs outside the games parameters and the users is notified if they have entered the same 
+coordinates more than once
+
+A restart feature has also been set up, so users can choose to play again if they choose
+   
 
 ## Data Model
 
