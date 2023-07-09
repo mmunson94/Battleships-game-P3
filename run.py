@@ -4,6 +4,7 @@ from random import randint
 computer_board = [[" "] * 9 for x in range(9)]
 # User Board that displays hits and misses
 user_board = [[" "] * 9 for i in range(9)]
+turns = 30
 
 # Function to print the board for user UX
 def print_board(board):
@@ -58,3 +59,29 @@ def check_hits(board):
             if column == "X":
                 count += 1
     return count
+
+
+# Funtion that starts the game
+def start_game():
+    global turns
+    print("----- Game Mode: Starting turns = " + str(turns))
+    print_board(user_board)
+    plot_ships(computer_board)
+    while turns > 0:
+        print('Guess a battleship location')
+        row, column = plot_coordinates()
+        if user_board[row][column] == "-":
+            print(", You guessed that one already.")
+        elif computer_board[row][column] == "X":
+            print("**** Hit ****")
+            user_board[row][column] = "X" 
+            turns -= 1  
+        else:
+            print(", YOU MISSED!")
+            user_board[row][column] = "-"   
+            turns -= 1     
+        if check_hits(user_board) == 5:
+            print("You win!")
+            break
+        print("You have " + str(turns) + " turns left")
+        print_board(user_board)
