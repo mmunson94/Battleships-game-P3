@@ -26,6 +26,9 @@ Ships are randomly generated on a hidden board in which the user must try to loc
    * Menu
 A menu has been implemented for good UX which allows the user to select difficulty and use their name
 
+<img width="740" alt="Screenshot 2023-07-09 at 23 54 02 1" src="https://github.com/mmunson94/Battleships-game-P3/assets/114744383/f663c2ef-8230-4ac7-a193-834f1d63cb60">
+
+
 Board is consistenly updated with users coordinates
 
 Input validation has been put in place to ensure user input is correct therefore, the user cannot
